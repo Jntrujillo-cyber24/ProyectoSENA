@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Caninos y Felinos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/css/img/logo.png" alt="logo de Caninos y Felinos" witdth="150">
+        <h1>Veterinaria Caninos y Felinos</h1>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="guarderia.html">Guardería</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
+        </nav>
+    <main>
+
+    <main class="contenedor-principal">
+    <section class="info-veterinaria">
+
+            <h2>Bienvenidos a nuestra veterinaria</h2>
+            <p>Brindamos atención y bienestar para tus mascotas con los mejores profesionales.</p>
+            
+            <h2>Nuestros Servicios</h2>
+            <p>Consulta médica, vacunación, desparasitación, peluquería y mucho más.</p>
+    </section>
+
+    <section class="gestion-citas">
+        <h2>Solicitar cita médica</h2>
+        <form action="/agendar-cita" method="POST">
+            <label for="mascota">Mascota:</label>
+            <input type="text" id="mascota" name="mascota" required>
+    
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+    
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza" name="raza" required>
+    
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+    
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+    
+            <label for="amo">Amo:</label>
+            <input type="text" id="amo" name="amo" required>
+    
+            <button type="submit">Validar Cita</button>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <p>Contacto: info@caninosyfelinos.com | Tel: 123-456-7890</p>
+    </footer>
+</body>
+</html>

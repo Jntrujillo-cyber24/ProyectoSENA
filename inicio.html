@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Caninos y Felinos</title>
+
+    <!-- Incluir Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Incluir Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.5.0/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed">
+
+<header class="bg-blue-600 p-4 text-white flex items-center justify-between">
+    <img src="/css/img/logo.png" alt="logo de Caninos y Felinos" width="150" class="h-auto">
+    <h1 class="text-3xl font-bold">Veterinaria Caninos y Felinos</h1>
+</header>
+
+<nav class="bg-blue-500 text-white">
+    <ul class="flex space-x-6 p-4 justify-center">
+        <li><a href="index.html" class="hover:text-yellow-300">Inicio</a></li>
+        <li><a href="servicios.html" class="hover:text-yellow-300">Servicios</a></li>
+        <li><a href="productos.html" class="hover:text-yellow-300">Productos</a></li>
+        <li><a href="guarderia.html" class="hover:text-yellow-300">Guardería</a></li>
+        <li><a href="promociones.html" class="hover:text-yellow-300">Promociones</a></li>
+    </ul>
+</nav>
+
+<main class="container mx-auto p-6">
+
+    <section class="info-veterinaria bg-white shadow-md rounded-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-blue-600">Bienvenidos a nuestra veterinaria</h2>
+        <p class="mt-4 text-gray-700">Brindamos atención y bienestar para tus mascotas con los mejores profesionales.</p>
+        
+        <h2 class="text-2xl font-semibold text-blue-600 mt-8">Nuestros Servicios</h2>
+        <p class="mt-4 text-gray-700">Consulta médica, vacunación, desparasitación, peluquería y mucho más.</p>
+    </section>
+
+    <section class="gestion-citas bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-2xl font-semibold text-blue-600">Solicitar cita médica</h2>
+        <form action="/agendar-cita" method="POST" class="space-y-4 mt-6">
+            <div class="flex flex-col">
+                <label for="mascota" class="text-gray-700 font-medium">Mascota:</label>
+                <input type="text" id="mascota" name="mascota" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <div class="flex flex-col">
+                <label for="edad" class="text-gray-700 font-medium">Edad:</label>
+                <input type="number" id="edad" name="edad" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <div class="flex flex-col">
+                <label for="raza" class="text-gray-700 font-medium">Raza:</label>
+                <input type="text" id="raza" name="raza" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <div class="flex flex-col">
+                <label for="fecha" class="text-gray-700 font-medium">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <div class="flex flex-col">
+                <label for="hora" class="text-gray-700 font-medium">Hora:</label>
+                <input type="time" id="hora" name="hora" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <div class="flex flex-col">
+                <label for="amo" class="text-gray-700 font-medium">Amo:</label>
+                <input type="text" id="amo" name="amo" class="border-2 border-gray-300 p-2 rounded-md" required>
+            </div>
+    
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg mt-4 hover:bg-blue-700">Validar Cita</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="bg-blue-600 text-white text-center p-4 mt-8">
+    <p>Contacto: info@caninosyfelinos.com | Tel: 123-456-7890</p>
+</footer>
+
+<!-- Incluir Flowbite JS -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.0/dist/flowbite.min.js"></script>
+</body>
+</html>
